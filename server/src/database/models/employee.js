@@ -11,13 +11,18 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Employee.belongsTo(models.Category,{
+        as : 'category',
+        foreignKey : 'categoryId'
+      })
     }
   };
   Employee.init({
     name: DataTypes.STRING,
-    sector: DataTypes.STRING,
     age: DataTypes.INTEGER,
-    email: DataTypes.STRING
+    sector: DataTypes.STRING,
+    email: DataTypes.STRING,
+    categoryId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Employee',

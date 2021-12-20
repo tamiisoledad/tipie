@@ -12,16 +12,20 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
-      sector: {
-        type: Sequelize.STRING,
-        allowNull: false
-      },
       age: {
         type: Sequelize.INTEGER,
         allowNull: false
       },
+      sector: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
       email: {
         type: Sequelize.STRING,
+        allowNull: false
+      },
+      categoryId: {
+        type: Sequelize.INTEGER,
         allowNull: false
       },
       createdAt: {

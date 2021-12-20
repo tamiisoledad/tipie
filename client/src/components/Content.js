@@ -14,11 +14,5 @@ const Content = ({ employees }) => {
                 </tbody>
     );
 }
-Content.defaultProps = {
-	name: "Aqui va el titulo",
-	sector: "danger",
-	age: 0,
-	email: "fa-award"
 
-}
 export default Content;

@@ -4,6 +4,6 @@ var {login} = require("../controllers/userController");
 var loginValidator = require("../validations/loginValidation");
 
 /* rutas */
-router.post('/login', loginValidator, login);
+router.post('/login',  login);
 
 module.exports = router;

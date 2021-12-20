@@ -6,46 +6,52 @@ let employees = [
     "age": "25",
     "sector": "Cocina",
     "email": "martin@tipieapp.com",
+    "categoryId": 1,
     createdAt: new Date,
     updatedAt: new Date
 },
 {
     "name": "Tamara",
     "age": "28",
-    "sector": "Salón",
+    "sector": "Salon",
     "email": "tamara@tipieapp.com",
+    "categoryId": 3,
     createdAt: new Date,
     updatedAt: new Date
 },
 {
     "name": "Federico",
     "age": "39",
-    "sector": "Recepción",
+    "sector": "Recepcion",
     "email": "federico@tipieapp.com",
+    "categoryId": 2,
     createdAt: new Date,
     updatedAt: new Date
 },
 {
     "name": "Agustin",
     "age": "30",
-    "sector": "Salón",
+    "sector": "Salon",
     "email": "agustin@tipieapp.com",
+    "categoryId": 3,
     createdAt: new Date,
     updatedAt: new Date
 },
 {
     "name": "Luciana",
     "age": "29",
-    "sector": "Salón",
+    "sector": "Salon",
     "email": "luciana@tipieapp.com",
+    "categoryId": 3,
     createdAt: new Date,
     updatedAt: new Date
 },
 {
     "name": "Sebastián",
     "age": "21",
-    "sector": "Recepción",
+    "sector": "Recepcion",
     "email": "sebastian@tipieapp.com",
+    "categoryId": 2,
     createdAt: new Date,
     updatedAt: new Date
 },
@@ -54,6 +60,7 @@ let employees = [
     "age": "52",
     "sector": "IT",
     "email": "santiago@tipieapp.com",
+    "categoryId": 4,
     createdAt: new Date,
     updatedAt: new Date
 },
@@ -62,6 +69,7 @@ let employees = [
     "age": "49",
     "sector": "Cocina",
     "email": "andres@tipieapp.com",
+    "categoryId": 1,
     createdAt: new Date,
     updatedAt: new Date
 },
@@ -70,14 +78,16 @@ let employees = [
     "age": "35",
     "sector": "Cocina",
     "email": "rodrigo@tipieapp.com",
+    "categoryId": 1,
     createdAt: new Date,
     updatedAt: new Date
 },
 {
     "name": "Lorena",
     "age": "40",
-    "sector": "Recepción",
+    "sector": "Recepcion",
     "email": "lorena@tipieapp.com",
+    "categoryId": 2,
     createdAt: new Date,
     updatedAt: new Date
 }

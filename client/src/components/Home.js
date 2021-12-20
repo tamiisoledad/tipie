@@ -3,6 +3,7 @@ import { Table } from 'react-bootstrap'
 import Content from './Content'
 
 
+
 class Home extends Component {
   constructor() {
     super();
@@ -16,8 +17,9 @@ class Home extends Component {
        try {
          let response = await fetch('http://localhost:3001/list');
          let result = await response.json()
-         
-         let list = result.data.map(persona => {
+         console.log(response)
+         console.log(result.data)
+         let list = result.data[0].map(persona => {
            let item = {
              name: persona.name,
              sector: persona.sector,
@@ -30,7 +32,7 @@ class Home extends Component {
            employees: [
              ...this.state.employees,
              ...list
-           ]
+           ],
          })
 
          
@@ -39,7 +41,7 @@ class Home extends Component {
        }
      }
 
-
+     
   render() {
     return (
       <div className="home">

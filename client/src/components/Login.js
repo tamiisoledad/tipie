@@ -34,7 +34,17 @@ const Login = () => {
             let result = await response.json();
             console.log(response)
             console.log(result)
-            navigate("/home")
+            if(result.data == "credenciales invalidas") {
+                let aviso = document.querySelector("span")
+                aviso.innerHTML = "Credenciales invalidas"
+            }else{
+                let aviso = document.querySelector("span")
+                aviso.innerHTML = null
+                navigate("/home")
+                
+            }
+            
+            
         return result
             
         } catch (error) {
@@ -54,11 +64,12 @@ const Login = () => {
                     <Form.Label>Contraseña</Form.Label>
                     <Form.Control type="password" placeholder="Introduzca su contraseña" name="password" value={state.password} onChange={handleChange} />
                 </Form.Group>
-                <span></span>
+                
                 <Button variant="primary" type="submit">
                     Iniciar sesión
                 </Button>
             </Form>
+            <span className="text-alert"></span>
 
         </div>
     );
