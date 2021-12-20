@@ -34,7 +34,7 @@ const Login = () => {
             let result = await response.json();
             console.log(response)
             console.log(result)
-            if(result.data == "credenciales invalidas") {
+            if(result.data == "credenciales invalidas" || result.meta.total == 0) {
                 let aviso = document.querySelector("span")
                 aviso.innerHTML = "Credenciales invalidas"
             }else{
